@@ -16,7 +16,7 @@ analyzeNetwork(net);
 %We need to feed ur labels
 numClasses = size(trainingData,2)-1;
 
-featureLayer = 'fire5-concat';
+featureLayer = 'activation_40_relu';
 
 Anchors = [
    155   247
