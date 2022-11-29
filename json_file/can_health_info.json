@@ -1,0 +1,177 @@
+[
+  {
+    "sugar_info": [
+      {
+        "norm": "Maximum amount of free sugars is about 10% of your daily calorie intake, a total of 90g of sugar (free sugars and natural sugars)",
+        "adult_men": "Men can consume a maximum of 60g of sugar",
+        "adult_women": "Women can consume a maximum of 50g of sugar",
+        "children": "In general: children between 2-18, can consume 25g of sugar",
+        "url": "https://www.sukrin.be/blog/hoeveel-suiker-per-dag/#:~:text=Volgens%20het%20advies%20van%20WHO,90%20gram%20suiker%20per%20dag."
+      }
+    ],
+    "caffeine_info": [
+      {
+        "adult_men": "Adults can consume 5,7mg/kg/day of caffeine, so this means they can consume a maximum of 320mg of caffeine per day",
+        "adult_women": "Women (in their fertile period) can consume 200mg - 300mg of caffeine per day",
+        "preg_women": "Pregnant women only a maximum of 100mg of caffeine per day (recommended)",
+        "children": "Children (with a weight of 30kg) can consume 2,5mg/kg/day of caffeine per day, so this means they can consume a maximum of 75mg of caffeine per day ", 
+        "url": "https://www.gezondleven.be/themas/voeding/focus-op-voeding-niet-voedingsstoffen/voedingsstoffen/cafe%C3%AFne"
+      }
+    ]
+  },
+  {
+    "id": "coca_cola",
+    "description": "A carbonated, sweetened soft drink.",
+    "ingredients_100ml": [
+    {
+      "energy": "42kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "10,6g",
+      "sugars": "10,6",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "8mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "139kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "35g",
+      "sugars": "35g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "32mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  },
+  {
+    "id": "fanta_orange",
+    "description": "Bright, bubbly and popular, Fanta is the soft drink that intensifies fun.",
+    "ingredients_100ml": [
+    {
+      "energy": "40kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "11,7g",
+      "sugars": "11,7g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,01g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "158kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "39g",
+      "sugars": "39g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,03g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  },
+  {
+    "id": "sanpellegrino",
+    "description": "A fine quality natural mineral water that flows from natural springs in Val Brembana in the San Pellegrino Terme area, at the foothills of the Italian Alps near Bergamo (Lombardy).",
+    "ingredients_100ml": [
+    {
+      "energy": "38kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "8,8g",
+      "sugars": "8,8g",
+      "fibers": "0,1g",
+      "protein":"0,1g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "125kcal",
+      "fats": "0,1g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "29g",
+      "sugars": "29g",
+      "fibers": "0,5g",
+      "protein":"0,3g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  },
+  {
+    "id": "schweppes_mojito",
+    "description": "A classic Cuban rum cocktail that combines fresh mint leaves with a burst of lime citrus for cooling summer refreshment.",
+    "ingredients_100ml": [
+    {
+      "energy": "38kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "9,3g",
+      "sugars": "9,3g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "128,6kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "30,6g",
+      "sugars": "30,6g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,01g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  },
+  {
+    "id": "schweppes_wild_berries",
+    "description": "This soft drink delights with an unmistakable berry flavour.",
+    "ingredients_100ml": [
+    {
+      "energy": "25kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "5,9g",
+      "sugars": "5,9g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,01g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "82kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "28g",
+      "sugars": "28g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,01g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  }
+]
