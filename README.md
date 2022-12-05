@@ -4,13 +4,29 @@
 
 <!---TO DO-->
 
-## add-ons matlab
+## Add-ons Matlab
+
+These are the add-ons you need:
 
 - Parallel computing toolbox
 - MATLAB Support Package for USB Webcams
 - Computer Vision Toolbox
 - Image Processing Toolbox
 - Deep Learning Toolbox
+
+### Add-on installation
+
+To install the parallel computing toolbox, you'll will probably have problems finding the add-on. For this problem, you need to search for "parallel computing toolbox" and click on another add-on. There you will see that you can install the parallel computing toolbox that you need.
+
+![parallel computing](./img/documentation/parallel_computing_problem.png)
+
+You could probably have the same problem with the "computer vision toolbox", therefore you can search for "computer vision toolbox", and click on another add-on.
+
+![computer vision](./img/documentation/computer_vision_problem.png)
+
+If you installed every add-on, then your installed add-on window will look like this.
+
+![add-on window](./img/documentation/add_on_manager.png)
 
 ## Components
 
