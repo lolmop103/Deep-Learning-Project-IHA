@@ -48,7 +48,7 @@
       "caffeine": "32mg"
     }
     ],
-    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+    "extra_info": "For adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
   },
   {
     "id": "fanta_orange",
@@ -79,7 +79,7 @@
       "caffeine": "0mg"
     }
     ],
-    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+    "extra_info": "For adults you can only drink 2 cans of fanta orange of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
   },
   {
     "id": "sanpellegrino",
@@ -110,7 +110,7 @@
       "caffeine": "0mg"
     }
     ],
-    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+    "extra_info": "For adults you can only drink 2 cans of sanpellegrino of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
   },
   {
     "id": "schweppes_mojito",
@@ -141,7 +141,7 @@
       "caffeine": "0mg"
     }
     ],
-    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+    "extra_info": "For adults you can only drink 2 cans of schweppes mojito of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
   },
   {
     "id": "schweppes_wild_berries",
@@ -172,6 +172,6 @@
       "caffeine": "0mg"
     }
     ],
-    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+    "extra_info": "For adults you can only drink 2 cans of schweppes wild berries of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
   }
 ]
