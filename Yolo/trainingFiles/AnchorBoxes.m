@@ -5,7 +5,8 @@ summary(trainingData);
 % In the command window there will come a print from the anchorBoxes, then
 % copy those values en put it in "designAndTrain".
 
-allBoxes = vertcat(trainingData.cola{:},trainingData.fanta{:},trainingData.sanPelligrino{:});
+allBoxes = vertcat(trainingData.cola_blik{:},trainingData.cola_fles{:},trainingData.fanta_blik{:},trainingData.sanPelligrino{:}, ...
+    trainingData.schweppes_mojito{:},trainingData.schweppes_wild_berries{:});
 
 % Plot the box area versus box aspect ratio.
 aspectRatio = allBoxes(:,3) ./ allBoxes(:,4);

@@ -65,10 +65,7 @@ We have chosen YOLO because it is a very fast object-detection algorithm that st
 
 ![YOLO architecture](./img/documentation/YOLO_architecture.png)
 
-- Resizes the input image into 448x448 before going through the convolutional network. The size of the input image can however be changed, the example code we used to make our model uses a input size of 128x128.
-- A 1x1 convolution is first applied to reduce the number of channels, which is then followed by a 3x3 convolution to generate a cuboidal output.
-- The activation function under the hood is ReLU, except for the final layer, which uses a linear activation function.
-- Some additional techniques, such as batch normalization and dropout, respectively regularize the model and prevent it from overfitting.
+First the input layer is resized. Then there is a number of convolutional layers followed by two fully connected layers. To reduce the amount of layers/channels 1x1 convolution followed by 3x3 convolution. After the convolutional layers max-pooling is used.
 
 #### How does the YOLO algorithm work
 
