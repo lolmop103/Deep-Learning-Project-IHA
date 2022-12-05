@@ -4,6 +4,14 @@
 
 <!---TO DO-->
 
+## add-ons matlab
+
+- Parallel computing toolbox
+- MATLAB Support Package for USB Webcams
+- Computer Vision Toolbox
+- Image Processing Toolbox
+- Deep Learning Toolbox
+
 ## Components
 
 ### Images
