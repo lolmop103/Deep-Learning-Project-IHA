@@ -40,10 +40,42 @@ YOLO is a real-time object detection algorithm. The authors of YOLO frame the ob
 
 - speed
 - Detection accuracy
-- Good generalization
+- lots of examples/documentation
 
-We have chosen YOLO because it is a very fast object-detection algorithm.
+We have chosen YOLO because it is a very fast object-detection algorithm that still has a pretty good detection accuracy. But most importantly we choose YOLO because it is widely used and documented. This means we could find way more examples then for e.g. RCNN.  
 ![object detection speeds](./img/documentation/speed.png)
+
+##### YOLO architecture
+
+![YOLO architecture](./img/documentation/YOLO_architecture.png)
+
+- Resizes the input image into 448x448 before going through the convolutional network. The size of the input image can however be changed, the example code we used to make our model uses a input size of 128x128.
+- A 1x1 convolution is first applied to reduce the number of channels, which is then followed by a 3x3 convolution to generate a cuboidal output.
+- The activation function under the hood is ReLU, except for the final layer, which uses a linear activation function.
+- Some additional techniques, such as batch normalization and dropout, respectively regularize the model and prevent it from overfitting.
+
+#### How does the YOLO algorithm work
+
+1. Residual blocks  
+First the input image is divided into a grid of NxN. Each cell in the grid then has localize and predict the class of the object it covers along with a probability value.
+2. Bounding box regression  
+Next the bounding boxes that correspond to objects in the image need to be determined. YOLO determines the attributes of these bounding boxes using a single regression module in the following format, where Y is the final vector representation for each bounding box.
+Y = [pc, bx, by, bh, bw, c1, c2]
+
+- pc corresponds to the probability score of each grid that contains an object.  
+![probability score of each grid](./img/documentation/probability_score.png)
+- bx and by are the x and y coordinates of the center of the bounding box with respect to the enveloping grid cell.
+- bh, bw correspond to the height and the width of the bounding box with respect to the enveloping grid cell.
+- c1 and c2 correspond to the classes we are trying to detect. You can have as many classes as your use case requires.  
+![bounding boxes](./img/documentation/bounding_boxes.png)
+
+3. intersections over Unions or IOU  
+In YOLO an object in an image can have multiple grid box candidates. The goal of the IOU is to discard grid boxes that are not relevant.
+First the user has to define an IOU threshold which decides how high a prediction of a grid box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area.
+![IOU](./img/documentation/IOU.png)
+4. Non-Max Suppression or NMS  
+Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
+This is where NMS can be used to only keep the boxes with the highest probability score of detection.
 
 ### GUI
 
