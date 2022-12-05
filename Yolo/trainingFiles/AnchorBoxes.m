@@ -1,9 +1,10 @@
 summary(trainingData);
 
-%geef hier de verschillende klassen van je training data mee, als je dan
-%deze file runt returned de anchorbox sizes
-%er komt in de command window een print van anchorBoxes, kopieer hiervan de
-%waarden en zet dit 
+% Here you give your the different classes from your training data, if you
+% then run this file, it will return the anchorbox sizes.
+% In the command window there will come a print from the anchorBoxes, then
+% copy those values en put it in "designAndTrain".
+
 allBoxes = vertcat(trainingData.cola{:},trainingData.fanta{:},trainingData.sanPelligrino{:});
 
 % Plot the box area versus box aspect ratio.
