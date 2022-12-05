@@ -1,9 +1,10 @@
-summary(trainingData128);
+summary(trainingData);
 
-% Combine all the ground truth boxes into one array.
 %geef hier de verschillende klassen van je training data mee, als je dan
-%deze file runt returned het de anchorbox sizes
-allBoxes = vertcat(trainingData128.cola{:},trainingData128.schweppes_green{:},trainingData128.schweppes_purple{:});
+%deze file runt returned de anchorbox sizes
+%er komt in de command window een print van anchorBoxes, kopieer hiervan de
+%waarden en zet dit 
+allBoxes = vertcat(trainingData.cola{:},trainingData.fanta{:},trainingData.sanPelligrino{:});
 
 % Plot the box area versus box aspect ratio.
 aspectRatio = allBoxes(:,3) ./ allBoxes(:,4);
