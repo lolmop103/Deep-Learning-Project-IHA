@@ -4,7 +4,7 @@
 
 <!---TO DO-->
 
-## Add-ons matlab
+## Add-ons Matlab
 
 These are the add-ons you need:
 
@@ -24,7 +24,7 @@ You could probably have the same problem with the "computer vision toolbox", the
 
 ![computer vision](./img/documentation/computer_vision_problem.png)
 
-If you installed every add-on then your installed add-on window will look like this.
+If you installed every add-on, then your installed add-on window will look like this.
 
 ![add-on window](./img/documentation/add_on_manager.png)
 
