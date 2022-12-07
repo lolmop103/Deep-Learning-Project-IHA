@@ -90,6 +90,17 @@ First the user has to define an IOU threshold which decides how high a predictio
 Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
 This is where NMS can be used to only keep the boxes with the highest probability score of detection.
 
+# ResNet50
+
+## Reasoning behind model choice
+
+![alt text](./img_read/overall_models.png "image Title")
+
+Had first chosen for squezeNet because it is one of the easiest models to mount and appy transfer learning.
+
+## SqueezeNet
+
+After I was comfortable with it and obtained a tolerable result I started working with ResNet50, I applied the same layers to the output on ResNet50.
 
 ## Using ResNet50
 
