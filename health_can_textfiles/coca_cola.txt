@@ -1,0 +1,33 @@
+"cola": [
+  {
+    "id": "coca_cola",
+    "description": "A carbonated, sweetened soft drink.",
+    "ingredients_100ml": [
+    {
+      "energy": "42kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "10,6g",
+      "sugars": "10,6",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "8mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "139kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "35g",
+      "sugars": "35g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "32mg"
+    }
+    ],
+    "extra_info": "for adults you can only drink 2 cans of coca cola of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  }
+]

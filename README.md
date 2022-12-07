@@ -191,4 +191,6 @@ Deep Learning Toolbox model for ResNet50 network
 For the database there wasn't enough time to create one. So we made a json-file that consists of health information about how much sugar and caffeine an adult or a child can consume.
 Then there is also a way to access the can with a specific ID, like "coca-cola". This ID has the ingredients of that specific can and how much of it you can drink, until you hit the limit of sugar and caffeine.
 
+When trying to add the json-file to the GUI and read out the data, then Matlab couldn't get the data out of the file, because the data from the json file was read as different structs and was hard to access the different elements. So thats why we made different text-files and show these on the GUI.
+
 The information about health was found on [gezondleven.be](https://www.gezondleven.be/themas/voeding/voedingsdriehoek) and the ingredients were found on the cans themselves.

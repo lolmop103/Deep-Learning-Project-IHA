@@ -1,0 +1,33 @@
+"schweppes mojito": [
+  {
+    "id": "schweppes_mojito",
+    "description": "A classic Cuban rum cocktail that combines fresh mint leaves with a burst of lime citrus for cooling summer refreshment.",
+    "ingredients_100ml": [
+    {
+      "energy": "38kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "9,3g",
+      "sugars": "9,3g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "128,6kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "30,6g",
+      "sugars": "30,6g",
+      "fibers": "0g",
+      "protein":"0g",
+      "salts": "0,01g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "For adults you can only drink 2 cans of schweppes mojito of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  }
+]

@@ -1,0 +1,18 @@
+"sugar_info": [
+  {
+    "norm": "Maximum amount of free sugars is about 10% of your daily calorie intake, a total of 90g of sugar (free sugars and natural sugars)",
+    "adult_men": "Men can consume a maximum of 60g of sugar",
+    "adult_women": "Women can consume a maximum of 50g of sugar",
+    "children": "In general: children between 2-18, can consume 25g of sugar",
+    "url": "https://www.sukrin.be/blog/hoeveel-suiker-per-dag/#:~:text=Volgens%20het%20advies%20van%20WHO,90%20gram%20suiker%20per%20dag."
+  }
+],
+"caffeine_info": [
+  {
+    "adult_men": "Adults can consume 5,7mg/kg/day of caffeine, so this means they can consume a maximum of 320mg of caffeine per day",
+    "adult_women": "Women (in their fertile period) can consume 200mg - 300mg of caffeine per day",
+    "preg_women": "Pregnant women only a maximum of 100mg of caffeine per day (recommended)",
+    "children": "Children (with a weight of 30kg) can consume 2,5mg/kg/day of caffeine per day, so this means they can consume a maximum of 75mg of caffeine per day ", 
+    "url": "https://www.gezondleven.be/themas/voeding/focus-op-voeding-niet-voedingsstoffen/voedingsstoffen/cafe%C3%AFne"
+  }
+]

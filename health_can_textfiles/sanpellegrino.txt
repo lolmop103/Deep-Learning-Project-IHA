@@ -1,0 +1,33 @@
+"sanpellegrino": [  
+ {
+    "id": "sanpellegrino",
+    "description": "A fine quality natural mineral water that flows from natural springs in Val Brembana in the San Pellegrino Terme area, at the foothills of the Italian Alps near Bergamo (Lombardy).",
+    "ingredients_100ml": [
+    {
+      "energy": "38kcal",
+      "fats": "0g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "8,8g",
+      "sugars": "8,8g",
+      "fibers": "0,1g",
+      "protein":"0,1g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "ingredients_330ml": [
+    {
+      "energy": "125kcal",
+      "fats": "0,1g",
+      "saturated_fatty_acids": "0g",
+      "carbohydrates": "29g",
+      "sugars": "29g",
+      "fibers": "0,5g",
+      "protein":"0,3g",
+      "salts": "0g",
+      "caffeine": "0mg"
+    }
+    ],
+    "extra_info": "For adults you can only drink 2 cans of sanpellegrino of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
+  }
+]
