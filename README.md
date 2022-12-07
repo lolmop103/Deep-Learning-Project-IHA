@@ -35,9 +35,9 @@ If you installed every add-on, then your installed add-on window will look like 
 It was decided to train with 3 different cans: Coca-Cola, Fanta Orange and San Pellegrino Clementina. Of these cans pictures were taken (in .jpg format) from all sides and in different angles. There are between 260-300 pictures per can. These are the pictures that will be used to train the model.
 Furthermore, there are two extra cans added to the image set which can be used to test the model, to see how it reacts on cans that were not included in the training.
 
-### Model
+## Model
 
-#### YOLO
+### YOLO
 
 For object detection using deep learning there are three widely used methods. Faster RCNN, YOLO and SSD. We decided to use YOLO as it is the fastest of the three methods. The downside with it being faster is that it loses some accuracy. For the training of the model we used a edited version of the code from the following guides
 
@@ -52,7 +52,7 @@ For our training we changed the ... to adam, lowered the learning rate to 0.0001
 
 YOLO is a real-time object detection algorithm. The authors of YOLO frame the object detection problem as a regression problem instead of a classification task by spatially separating bounding boxes and associating probabilities to each of the detected images using a single convolutional neural network (CNN).
 
-##### Benefits of YOLO
+#### Benefits of YOLO
 
 - speed
 - Detection accuracy
@@ -61,7 +61,7 @@ YOLO is a real-time object detection algorithm. The authors of YOLO frame the ob
 We have chosen YOLO because it is a very fast object-detection algorithm that still has a pretty good detection accuracy. But most importantly we choose YOLO because it is widely used and documented. This means we could find way more examples then for e.g. RCNN.  
 ![object detection speeds](./img/documentation/speed.png)
 
-##### YOLO architecture
+#### YOLO architecture
 
 ![YOLO architecture](./img/documentation/YOLO_architecture.png)
 
@@ -90,19 +90,19 @@ First the user has to define an IOU threshold which decides how high a predictio
 Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
 This is where NMS can be used to only keep the boxes with the highest probability score of detection.
 
-# ResNet50
+### ResNet50
 
-## Reasoning behind model choice
+#### Reasoning behind model choice
 
 ![alt text](./img_read/overall_models.png "image Title")
 
 Had first chosen for squezeNet because it is one of the easiest models to mount and appy transfer learning.
 
-## SqueezeNet
+#### SqueezeNet
 
 After I was comfortable with it and obtained a tolerable result I started working with ResNet50, I applied the same layers to the output on ResNet50.
 
-## Using ResNet50
+#### Using ResNet50
 
 ResNet-50 is a convolutional neural network that is trained on more than a million images from the ImageNet database. As a result, the network has learned rich feature representations for a wide range of images. The network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals.
 
@@ -112,7 +112,7 @@ In Mathlab it has 177 layers in total, corresponding to a 50 layer residual netw
 
 The network has an image input size of 224-by-224-by-3.
 
-## Benefits of ResNet50
+#### Benefits of ResNet50
 
 1.Networks with large number (even thousands) of layers can be trained easily without increasing the training error percentage.
 
@@ -120,7 +120,7 @@ The network has an image input size of 224-by-224-by-3.
 
 The ResNet architecture follows two basic design rules. First, the number of filters in each layer is the same depending on the size of the output feature map. Second, if the feature map’s size is halved, it has double the number of filters to maintain the time complexity of each layer.
 
-### layers of ResNet50
+#### layers of ResNet50
 
 The 50-layer ResNet architecture includes the following elements, as shown in the table below:
 
@@ -149,14 +149,14 @@ Inside of ModelTransferLearning folder:
 | Adapt_for_cnn.m  | In this folder we change ur model to make it compatible for fast RCNN   |
 | resNet_trained_1.mat |The model with all     |
 
-## Data augementation
+#### Data augmentation
 
 I tested the trained model with the 6 classes, it was almost a success, the cola can is recognised less,my reasoning was a  larger learning rate. There is an overfitting with the cola bottle over the cola Can. Letting it train for less time, drop out increase....  So have adjusted the model 0.0001 lr.
 Got a validation dataset, that i select by myself with lots of noise and odd angles. It seems to work now when held in front of the camera in real time. Not all classes have the same number of pictures and it is not necessary, I also applied data augmentation.
 
 ![alt text](./img_read/Data%20.gif "image Title")
 
-## training ResNet50
+#### Training ResNet50
 
 Many times I did not have to train. I noticed with a low number of epochs 10. A miniBatchSize of 11 and a validation frequency of 6 obtained good results. I chose for a rotation between -90 degrees and 90 degrees. And a max scaling of 2.
 
@@ -164,7 +164,7 @@ Many times I did not have to train. I noticed with a low number of epochs 10. A 
 
 ![alt text](./img_read/Reslutofalliterationstraining.gif "image Title")
 
-## Testing
+#### Testing
 
 For the moment it reacts better with an black background. The parameters i'm using to train the model are the next.
 
@@ -174,19 +174,19 @@ For the moment it reacts better with an black background. The parameters i'm usi
 | learning rate|How fast we converagance to an result |0.001    |
 | mean/average |The noise function  |  |
 
-## Link to dataset of images
+#### Link to dataset of images
 
 https://vivesonline-my.sharepoint.com/:f:/r/personal/r0755466_student_vives_be/Documents/Data-foto%27s-deepl/NewDataset?csf=1&web=1&e=SQyhZf
 
-## Needed toolboxes (Add ons)
+#### Needed toolboxes (Add ons)
 Deep Learning Toolbox
 Deep Learning Toolbox model for ResNet50 network
 
-### GUI
+## GUI
 
 <!---TO DO-->
 
-### Database
+## Database
 
 For the database there wasn't enough time to create one. So we made a json-file that consists of health information about how much sugar and caffeine an adult or a child can consume.
 Then there is also a way to access the can with a specific ID, like "coca-cola". This ID has the ingredients of that specific can and how much of it you can drink, until you hit the limit of sugar and caffeine.
