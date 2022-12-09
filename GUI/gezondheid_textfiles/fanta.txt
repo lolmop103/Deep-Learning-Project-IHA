@@ -1,0 +1,16 @@
+fanta orange
+Bright, bubbly and popular, Fanta is the soft drink that intensifies fun.
+    
+ingredients 330ml:
+      energy: 158kcal
+      fats: 0g
+      saturated_fatty_acids 0g
+      carbohydrates: 39g
+      sugars: 39g
+      fibers: 0g
+      protein:0g
+      salts: 0,03g
+      caffeine: 0mg"
+
+extra_info: "For adults you can only drink 2 cans of fanta orange of 330ml
+, because otherwise you will go above the average. For children it is less than 2 cans.
