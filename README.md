@@ -46,7 +46,7 @@ For object detection using deep learning there are three widely used methods. Fa
 
 To train the YOLO model we first had to label all of our data, we did this using the imageLabeler tool of matlab. In this tool we add the different labels: cola, fanta, sanPelligrino and then draw a bounding box around the object (can also be multiple objects) that can be found in the image. When finished the labeled data is saved as a groundTruth. At the end of the preprocessing we then convert this to a table that can be used as input for the training of our model.
 
-For our training we changed the ... to adam, lowered the learning rate to 0.0001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
+For our training we changed the ... to adam, lowered the learning rate to 0.001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
 
 #### What is YOLO
 
@@ -71,6 +71,7 @@ First the input layer is resized. Then there is a number of convolutional layers
 
 1. Residual blocks  
 First the input image is divided into a grid of NxN. Each cell in the grid then has localize and predict the class of the object it covers along with a probability value.
+![residual blocks](./img/documentation/Residual_blocks.png)
 2. Bounding box regression  
 Next the bounding boxes that correspond to objects in the image need to be determined. YOLO determines the attributes of these bounding boxes using a single regression module in the following format, where Y is the final vector representation for each bounding box.
 Y = [pc, bx, by, bh, bw, c1, c2]
