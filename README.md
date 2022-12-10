@@ -65,7 +65,8 @@ We have chosen YOLO because it is a very fast object-detection algorithm that st
 
 ![YOLO architecture](./img/documentation/YOLO_architecture.png)
 
-First the input layer is resized. Then there is a number of convolutional layers followed by two fully connected layers. To reduce the amount of layers/channels 1x1 convolution followed by 3x3 convolution. After the convolutional layers max-pooling is used.
+First the input layer is resized. Then there is a number of convolutional 
+followed by two fully connected layers. To reduce the dimension size 1x1 convolution followed by 3x3 convolution is used. After the convolutional layers max-pooling is used.
 
 #### How does the YOLO algorithm work
 
