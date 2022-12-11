@@ -13,6 +13,10 @@ These are the add-ons you need:
 - Computer Vision Toolbox
 - Image Processing Toolbox
 - Deep Learning Toolbox
+- Image Acquisition Toolbox
+- Image Acquisition Toolbox Support Package for OS Generic Video Interface
+- Deep Learning Toolbox model for ResNet50 network
+
 
 ### Add-on installation
 
@@ -184,7 +188,59 @@ Deep Learning Toolbox model for ResNet50 network
 
 ## GUI
 
-<!---TO DO-->
+#### introduction
+
+The Intent behind the GUI is the allow a user friendly experience for people with little to no knowledge of Matlab
+and make it more attractive in general.
+
+The GUI constist of two application , which are designed and programmed via the MATLAB app designer.
+GUI which is the main app and miniGUI which is responsible for the live camera feed.
+
+#### GUI
+
+The GUI is where the user will receive all the information about the drink the model recognizes. 
+- the name of the drink.
+- the percentage of how sure the model is..
+- and some health information about the drink or incase the model doesnt recognizes anything general healt information.
+
+![image](./img/documentation/GUI.PNG "image Title")
+
+It also contains 4 advanced options to change the input image and see how that effects the model.
+- add salt and pepper noise to the image.
+- add gaussion to the image.
+- add speckle noise to the image.
+- the ability to rotate the image.
+
+![image](./img/documentation/GUI_options_on.PNG "image Title")
+
+The two frame boxxes are self explanatory, they contain the input the model receives and output images the model returns.
+And as last the camera button which open the miniGUI
+
+#### miniGUI
+
+When you press the camera button on the GUI it will activate the miniGUI and load in the two models in the startup.
+The miniGUI is responible for running the model prediction on live camere feed , this allows the GUI the remain interactive and run smoothly.
+it contains two options the YOLO model of the resnet50 model, which when selected will open a second screen to show the output in a bigger format.
+The user is able the easily switch between the two options. 
+
+![image](./img/documentation/miniGUI.PNG "image Title")
+
+#### quick examples
+
+![image](./img/documentation/Screenshot1.png "image Title")
+
+![image](./img/documentation/Screenshot2.png "image Title")
+
+![image](./img/documentation/Screenshot3.png "image Title")
+
+![image](./img/documentation/Screenshot4.png "image Title")
+
+![image](./img/documentation/Screenshot5.png "image Title")
+
+![image](./img/documentation/Screenshot6.png "image Title")
+
+![image](./img/documentation/Screenshot7.png "image Title")
+
 
 ## Database
 
