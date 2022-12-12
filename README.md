@@ -2,7 +2,18 @@
 
 ## Introduction
 
-<!---TO DO-->
+With a laptop and webcam, recognize soft drinks/soda using (MATLAB) Deep Learning.
+
+give advice to the user about:
+* The content, what is inside the soft drinks/soda.
+* How much you maximum may drink to be "healthy"
+* Healthy alternatives
+
+Information about the soft drinks/soda needs to be accessible for the application.
+
+A Graphic User Interface (GUI) uses the application, this is to create a larger audience
+
+This application primary has to be developed in MATLAB, and could be expanded to Pythin interfacing.
 
 ## Add-ons Matlab
 
