@@ -82,16 +82,17 @@ Next the bounding boxes that correspond to objects in the image need to be deter
 Y = [pc, bx, by, bh, bw, c1, c2]
 
 - pc corresponds to the probability score of each grid that contains an object.  
-![probability score of each grid](./img/documentation/probability_score.png)
+![probability score of each grid](./img/documentation/probability_score.png)  
 - bx and by are the x and y coordinates of the center of the bounding box with respect to the enveloping grid cell.
 - bh, bw correspond to the height and the width of the bounding box with respect to the enveloping grid cell.
 - c1 and c2 correspond to the classes we are trying to detect. You can have as many classes as your use case requires.  
-![bounding boxes](./img/documentation/bounding_boxes.png)
+![bounding boxes](./img/documentation/bounding_boxes.png)  
 
 3. intersections over Unions or IOU  
 In YOLO an object in an image can have multiple grid box candidates. The goal of the IOU is to discard grid boxes that are not relevant.
-First the user has to define an IOU threshold which decides how high an IOU of a bounding box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area. The intersection area is the area where the predicted bounding box intersects with the expected bounding box, and the union area is there areas added minus the intersection area.
+First the user has to define an IOU threshold which decides how high an IOU of a bounding box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area. The intersection area is the area where the predicted bounding box intersects with the expected bounding box, and the union area is there areas added minus the intersection area.  
 ![IOU](./img/documentation/IOU.png)
+![IOU equation](./img/documentation/iou_equation.png)
 4. Non-Max Suppression or NMS  
 Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
 This is where NMS can be used to only keep the boxes with the highest probability score of detection.
@@ -252,3 +253,7 @@ Then there is also a way to access the can with a specific ID, like "coca-cola".
 When trying to add the json-file to the GUI and read out the data, then Matlab couldn't get the data out of the file, because the data from the json file was read as different structs and was hard to access the different elements. So thats why we made different text-files and show these on the GUI.
 
 The information about health was found on [gezondleven.be](https://www.gezondleven.be/themas/voeding/voedingsdriehoek) and the ingredients were found on the cans themselves.
+
+## Bronnen
+
+[YOLO](https://www.datacamp.com/blog/yolo-object-detection-explained)
