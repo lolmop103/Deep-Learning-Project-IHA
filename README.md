@@ -85,7 +85,7 @@ Y = [pc, bx, by, bh, bw, c1, c2]
 
 3. intersections over Unions or IOU  
 In YOLO an object in an image can have multiple grid box candidates. The goal of the IOU is to discard grid boxes that are not relevant.
-First the user has to define an IOU threshold which decides how high a prediction of a grid box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area.
+First the user has to define an IOU threshold which decides how high an IOU of a bounding box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area. The intersection area is the area where the predicted bounding box intersects with the expected bounding box, and the union area is there areas added minus the intersection area.
 ![IOU](./img/documentation/IOU.png)
 4. Non-Max Suppression or NMS  
 Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
