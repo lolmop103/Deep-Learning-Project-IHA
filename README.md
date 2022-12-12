@@ -267,7 +267,7 @@ When trying to add the json-file to the GUI and read out the data, then Matlab c
 
 The information about health was found on [gezondleven.be](https://www.gezondleven.be/themas/voeding/voedingsdriehoek) and the ingredients were found on the cans themselves.
 
-## Bronnen
+## Sources
 
 [YOLO](https://www.datacamp.com/blog/yolo-object-detection-explained)
 
