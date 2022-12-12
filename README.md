@@ -50,7 +50,9 @@ For object detection using deep learning there are three widely used methods. Fa
 
 To train the YOLO model we first had to label all of our data, we did this using the imageLabeler tool of matlab. In this tool we add the different labels: cola, fanta, sanPelligrino and then draw a bounding box around the object (can also be multiple objects) that can be found in the image. When finished the labeled data is saved as a groundTruth. At the end of the preprocessing we then convert this to a table that can be used as input for the training of our model.
 
-For our training we changed the ... to adam, lowered the learning rate to 0.001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
+For our training we changed the loss function to adam, lowered the learning rate to 0.001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
+
+To be able to instantly train the model use the WorkspaceVariables.mat file in /Yolo/trainingFiles. To get the labeled data groundTruth use labelsEverything.mat in /Yolo/trainingFiles and use AllCansDetector.mat or ColaFantaSanPDetector.mat in /Yolo/traininFiles/ to instantly have a trained model and be able to test.
 
 #### What is YOLO
 
