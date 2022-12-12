@@ -271,23 +271,21 @@ The information about health was found on [gezondleven.be](https://www.gezondlev
 
 [YOLO](https://www.datacamp.com/blog/yolo-object-detection-explained)
 
-[ResNet50](https://datagen.tech/guides/computer-vision/resnet-50/#:~:text=The%2050%2Dlayer%20ResNet%20architecture,with%201%C3%971%2C256%20kernels.)
+[ResNet50: The basics](https://datagen.tech/guides/computer-vision/resnet-50/#:~:text=The%2050%2Dlayer%20ResNet%20architecture,with%201%C3%971%2C256%20kernels.)
 
-[ResNet50](https://towardsdatascience.com/residual-blocks-building-blocks-of-resnet-fd90ca15d6ec)
+[ResNet50: Residual blocks](https://towardsdatascience.com/residual-blocks-building-blocks-of-resnet-fd90ca15d6ec)
 
-[ResNet50](https://tensorspace.org/html/playground/resnet50.html)
+[ResNet50 Playground](https://tensorspace.org/html/playground/resnet50.html)
 
-[ResNet50](https://iq.opengenus.org/resnet50-architecture/)
+[ResNet50: understanding architecture](https://iq.opengenus.org/resnet50-architecture/)
 
 [ResNet50](https://iq.opengenus.org/residual-neural-networks/#:~:text=Advantages%20of%20ResNet,gradient%20problem%20using%20identity%20mapping.)
 
-[ResNet50](https://nl.mathworks.com/help/vision/ref/rcnnobjectdetector.html)
+[ResNet50: rcnnobjectdetector (MATLAB)](https://nl.mathworks.com/help/vision/ref/rcnnobjectdetector.html)
 
-[ResNet50](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
+[ResNet50 MATLAB](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
 
-[ResNet50](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
-
-[ResNet50](https://nl.mathworks.com/matlabcentral/fileexchange/64626-deep-learning-toolbox-model-for-resnet-50-network)
+[ResNet50: MATLAB toolbox](https://nl.mathworks.com/matlabcentral/fileexchange/64626-deep-learning-toolbox-model-for-resnet-50-network)
 
 
 
