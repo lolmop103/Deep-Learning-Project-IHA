@@ -285,7 +285,7 @@ The information about health was found on [gezondleven.be](https://www.gezondlev
 
 [ResNet50](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
 
-[ResNet50](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html]
+[ResNet50](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
 
 [ResNet50](https://nl.mathworks.com/matlabcentral/fileexchange/64626-deep-learning-toolbox-model-for-resnet-50-network)
 
