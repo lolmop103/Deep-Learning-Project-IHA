@@ -1,33 +1,16 @@
-"schweppes wild berries": [
-  {
-    "id": "schweppes_wild_berries",
-    "description": "This soft drink delights with an unmistakable berry flavour.",
-    "ingredients_100ml": [
-    {
-      "energy": "25kcal",
-      "fats": "0g",
-      "saturated_fatty_acids": "0g",
-      "carbohydrates": "5,9g",
-      "sugars": "5,9g",
-      "fibers": "0g",
-      "protein":"0g",
-      "salts": "0,01g",
-      "caffeine": "0mg"
-    }
-    ],
-    "ingredients_330ml": [
-    {
-      "energy": "82kcal",
-      "fats": "0g",
-      "saturated_fatty_acids": "0g",
-      "carbohydrates": "28g",
-      "sugars": "28g",
-      "fibers": "0g",
-      "protein":"0g",
-      "salts": "0,01g",
-      "caffeine": "0mg"
-    }
-    ],
-    "extra_info": "For adults you can only drink 2 cans of schweppes wild berries of 330ml, because otherwise you will go above the average. For children it is less than 2 cans"
-  }
-]
+schweppes wild_berries
+This soft drink delights with an unmistakable berry flavour.
+
+ingredients_330ml:
+      energy: 82kcal
+      fats: 0g
+      saturated_fatty_acids: 0g
+      carbohydrates: 28g
+      sugars: 28g
+      fibers: 0g
+      protein: 0g
+      salts: 0,01g
+      caffeine: 0mg
+
+extra_info: For adults you can only drink 2 cans of schweppes wild berries of 330ml, 
+because otherwise you will go above the average. For children it is less than 2 cans
