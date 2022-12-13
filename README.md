@@ -2,7 +2,18 @@
 
 ## Introduction
 
-<!---TO DO-->
+With a laptop and webcam, recognize soft drinks/soda using (MATLAB) Deep Learning.
+
+give advice to the user about:
+* The content, what is inside the soft drinks/soda.
+* How much you maximum may drink to be "healthy"
+* Healthy alternatives
+
+Information about the soft drinks/soda needs to be accessible for the application.
+
+A Graphic User Interface (GUI) uses the application, this is to create a larger audience
+
+This application primary has to be developed in MATLAB, and could be expanded to Pythin interfacing.
 
 ## Add-ons Matlab
 
@@ -50,7 +61,9 @@ For object detection using deep learning there are three widely used methods. Fa
 
 To train the YOLO model we first had to label all of our data, we did this using the imageLabeler tool of matlab. In this tool we add the different labels: cola, fanta, sanPelligrino and then draw a bounding box around the object (can also be multiple objects) that can be found in the image. When finished the labeled data is saved as a groundTruth. At the end of the preprocessing we then convert this to a table that can be used as input for the training of our model.
 
-For our training we changed the ... to adam, lowered the learning rate to 0.001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
+For our training we changed the loss function to adam, lowered the learning rate to 0.001 and changed the mini-batch size to 8. Before training it is also important to change the anchors variable, this can be done using the AnchorBoxes file.
+
+To be able to instantly train the model use the WorkspaceVariables.mat file in /Yolo/trainingFiles. To get the labeled data groundTruth use labelsEverything.mat in /Yolo/trainingFiles and use AllCansDetector.mat or ColaFantaSanPDetector.mat in /Yolo/traininFiles/ to instantly have a trained model and be able to test.
 
 #### What is YOLO
 
@@ -82,16 +95,17 @@ Next the bounding boxes that correspond to objects in the image need to be deter
 Y = [pc, bx, by, bh, bw, c1, c2]
 
 - pc corresponds to the probability score of each grid that contains an object.  
-![probability score of each grid](./img/documentation/probability_score.png)
+![probability score of each grid](./img/documentation/probability_score.png)  
 - bx and by are the x and y coordinates of the center of the bounding box with respect to the enveloping grid cell.
 - bh, bw correspond to the height and the width of the bounding box with respect to the enveloping grid cell.
 - c1 and c2 correspond to the classes we are trying to detect. You can have as many classes as your use case requires.  
-![bounding boxes](./img/documentation/bounding_boxes.png)
+![bounding boxes](./img/documentation/bounding_boxes.png)  
 
 3. intersections over Unions or IOU  
 In YOLO an object in an image can have multiple grid box candidates. The goal of the IOU is to discard grid boxes that are not relevant.
-First the user has to define an IOU threshold which decides how high a prediction of a grid box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area.
+First the user has to define an IOU threshold which decides how high an IOU of a bounding box has to be for it to be relevant. YOLO computes the IOU of each grid cell which is the Intersection area divided by the Union Area. The intersection area is the area where the predicted bounding box intersects with the expected bounding box, and the union area is there areas added minus the intersection area.  
 ![IOU](./img/documentation/IOU.png)
+![IOU equation](./img/documentation/iou_equation.png)
 4. Non-Max Suppression or NMS  
 Setting a threshold for the IOU is not always enough because an object can have multiple boxes with IOU beyond the threshold.  
 This is where NMS can be used to only keep the boxes with the highest probability score of detection.
@@ -252,3 +266,26 @@ Then there is also a way to access the can with a specific ID, like "coca-cola".
 When trying to add the json-file to the GUI and read out the data, then Matlab couldn't get the data out of the file, because the data from the json file was read as different structs and was hard to access the different elements. So thats why we made different text-files and show these on the GUI.
 
 The information about health was found on [gezondleven.be](https://www.gezondleven.be/themas/voeding/voedingsdriehoek) and the ingredients were found on the cans themselves.
+
+## Sources
+
+[YOLO](https://www.datacamp.com/blog/yolo-object-detection-explained)
+
+[ResNet50: The basics](https://datagen.tech/guides/computer-vision/resnet-50/#:~:text=The%2050%2Dlayer%20ResNet%20architecture,with%201%C3%971%2C256%20kernels.)
+
+[ResNet50: Residual blocks](https://towardsdatascience.com/residual-blocks-building-blocks-of-resnet-fd90ca15d6ec)
+
+[ResNet50 Playground](https://tensorspace.org/html/playground/resnet50.html)
+
+[ResNet50: understanding architecture](https://iq.opengenus.org/resnet50-architecture/)
+
+[ResNet50](https://iq.opengenus.org/residual-neural-networks/#:~:text=Advantages%20of%20ResNet,gradient%20problem%20using%20identity%20mapping.)
+
+[ResNet50: rcnnobjectdetector (MATLAB)](https://nl.mathworks.com/help/vision/ref/rcnnobjectdetector.html)
+
+[ResNet50 MATLAB](https://nl.mathworks.com/help/deeplearning/ref/resnet50.html)
+
+[ResNet50: MATLAB toolbox](https://nl.mathworks.com/matlabcentral/fileexchange/64626-deep-learning-toolbox-model-for-resnet-50-network)
+
+
+
